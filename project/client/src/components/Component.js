@@ -21,11 +21,17 @@ const Component = ({ myProp }) => {
     <>
       <Container>
         <CustomH1>
-          Component with a prop called myProp som har {myProp}-verdi and a
-          Global Styled Component
+          Komponent som tar i mot en prop som heter myProp. Den får nå en verdi{' '}
+          {myProp} fra App.js.
         </CustomH1>
+        <p>
+          Komponenten bruker en global Styled Component (Container) fra mappen
+          styles.
+        </p>
+        <p>Komponenten bruker en lokal Styled Component (CustomH1)</p>
+        <p>Komponenten håndterer et enkelt klikk-event.</p>
         <button type="button" onClick={handleEvent}>
-          Button
+          Klikk meg
         </button>
       </Container>
     </>
