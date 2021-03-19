@@ -1,4 +1,5 @@
 import Routes from './routes/Routes';
+import Theme from './styles/Theme';
 
 /**
  * Importerer Routes her da den "styrer" hele applikasjonen
@@ -6,7 +7,11 @@ import Routes from './routes/Routes';
  */
 
 function App() {
-  return <Theme><Routes /></Theme>;
+  return (
+    <Theme>
+      <Routes />
+    </Theme>
+  );
 }
 
 export default App;
