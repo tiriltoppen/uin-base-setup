@@ -1,9 +1,10 @@
-import Component from '../components/Component';
+import Movies from '../components/Movies';
 
-/**
- * Home bruker nå komponenten jeg har laget og sender en prop
- */
-
-const Home = () => <Component myProp="myValue" />;
+const Home = () => (
+    <section>
+<h2>hey</h2>
+    <Movies />
+</section>
+);
 
 export default Home;
